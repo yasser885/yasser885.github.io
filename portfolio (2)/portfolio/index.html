@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasser Tabya, développeur Full Stack</title>
+  <meta name="description" content="Portfolio de Yasser Tabya, étudiant en MBA Développeur Full Stack à Lyon, à la recherche d'une alternance ou d'un stage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE ===== -->
+  <header class="entete">
+    <div class="conteneur entete-ligne">
+      <a href="#accueil" class="logo">Yasser Tabya</a>
+
+      <nav class="menu" id="menu">
+        <a href="#projets">Projets</a>
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="cv/CV_Yasser_TABYA.pdf" class="bouton bouton-petit" download>Télécharger mon CV</a>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== ACCUEIL ===== -->
+    <section class="hero" id="accueil">
+      <div class="conteneur hero-contenu">
+
+        <!-- Photo au centre, avec le texte qui tourne autour du cercle -->
+        <div class="cercle">
+          <svg class="cercle-texte" viewBox="0 0 300 300" aria-hidden="true">
+            <defs>
+              <path id="chemin-cercle" d="M150,150 m-126,0 a126,126 0 1,1 252,0 a126,126 0 1,1 -252,0"></path>
+            </defs>
+            <text>
+              <textPath href="#chemin-cercle" textLength="790">
+                DÉVELOPPEUR FULL STACK ✦ ALTERNANCE OU STAGE ✦ LYON ✦
+              </textPath>
+            </text>
+          </svg>
+          <img src="images/photo.jpg" alt="Photo de Yasser Tabya" class="hero-photo">
+        </div>
+
+        <p class="dispo"><span class="point"></span>Disponible pour une alternance ou un stage</p>
+
+        <h1>Yasser Tabya</h1>
+        <p class="hero-titre">Développeur Full Stack</p>
+
+        <p class="hero-texte">
+          Je suis en MBA Développeur Full Stack à MyDigitalSchool Lyon. Je crée des sites et des
+          applications web en HTML, CSS, JavaScript, PHP et SQL, du design de la page jusqu'à la base
+          de données. Mon passé en cybersécurité me pousse à écrire du code propre et sûr.
+        </p>
+
+        <div class="hero-boutons">
+          <a href="#projets" class="bouton">Voir mes projets</a>
+          <a href="#contact" class="bouton bouton-contour">Me contacter</a>
+        </div>
+
+        <dl class="hero-infos">
+          <div><dt>Je cherche</dt><dd>Alternance de 2 ans ou stage</dd></div>
+          <div><dt>Rythme en alternance</dt><dd>2 semaines en entreprise, 1 semaine à l'école</dd></div>
+          <div><dt>Lieu</dt><dd>Lyon, mobile en France</dd></div>
+          <div><dt>GitHub</dt><dd><a href="https://github.com/yasser885" target="_blank" rel="noopener">github.com/yasser885</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== PROJETS ===== -->
+    <section class="section" id="projets">
+      <div class="conteneur">
+        <h2 class="titre-section">Mes projets</h2>
+        <p class="intro-section">Deux sites que j'ai conçus et codés de A à Z. Ils sont en ligne : vous pouvez les tester.</p>
+
+        <!-- Projet 1 : StayFit -->
+        <article class="projet">
+          <a href="https://yasser885.github.io/stayfit/" target="_blank" rel="noopener" class="navigateur">
+            <div class="navigateur-barre">
+              <span class="rond"></span><span class="rond"></span><span class="rond"></span>
+              <span class="adresse">yasser885.github.io/stayfit</span>
+            </div>
+            <img src="images/stayfit.jpg" alt="Page d'accueil du site StayFit" loading="lazy">
+          </a>
+
+          <div class="projet-texte">
+            <p class="projet-date">Mars à juillet 2025</p>
+            <h3>StayFit, plateforme de coaching sportif</h3>
+            <p>
+              Un site pour suivre un programme de sport semaine après semaine. Chaque programme a sa
+              propre page avec les séances, les exercices, les séries et les temps de repos.
+            </p>
+            <ul class="projet-liste">
+              <li>10 pages, dont 6 programmes détaillés séance par séance</li>
+              <li>Filtres des programmes et formulaire d'inscription vérifié en JavaScript</li>
+              <li>Menu responsive et mise en page adaptée au mobile</li>
+              <li>Version application avec Next.js et Supabase (données et connexion)</li>
+            </ul>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Next.js</li><li>Supabase</li>
+            </ul>
+            <div class="projet-liens">
+              <a href="https://yasser885.github.io/stayfit/" target="_blank" rel="noopener" class="bouton">Voir le site</a>
+              <a href="https://github.com/yasser885/stayfit" target="_blank" rel="noopener" class="bouton bouton-contour">Voir le code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 2 : Centre de langues -->
+        <article class="projet projet-inverse">
+          <a href="https://yasser885.github.io/centre-langues/" target="_blank" rel="noopener" class="navigateur">
+            <div class="navigateur-barre">
+              <span class="rond"></span><span class="rond"></span><span class="rond"></span>
+              <span class="adresse">yasser885.github.io/centre-langues</span>
+            </div>
+            <img src="images/centre-langues.jpg" alt="Page d'accueil du site du centre de formation de langues" loading="lazy">
+          </a>
+
+          <div class="projet-texte">
+            <p class="projet-date">Janvier à juin 2024, nouvelle version en 2026</p>
+            <h3>Centre de formation de langues</h3>
+            <p>
+              Le site d'un centre qui enseigne l'anglais et le français. On y découvre les cours, les
+              niveaux et les diplômes, puis on s'inscrit en ligne.
+            </p>
+            <ul class="projet-liste">
+              <li>Test de niveau interactif en JavaScript qui donne un résultat de A1 à C2</li>
+              <li>Page de connexion et formulaire d'inscription avec vérification des champs</li>
+              <li>Une page complète pour chaque langue : programme, semaine type, diplômes</li>
+              <li>Interface adaptée aux ordinateurs, tablettes et mobiles</li>
+            </ul>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive</li>
+            </ul>
+            <div class="projet-liens">
+              <a href="https://yasser885.github.io/centre-langues/" target="_blank" rel="noopener" class="bouton">Voir le site</a>
+              <a href="https://github.com/yasser885/centre-langues" target="_blank" rel="noopener" class="bouton bouton-contour">Voir le code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 3 : Suricata -->
+        <article class="projet-simple">
+          <div>
+            <p class="projet-date">Mars à juin 2026, chez Comply World</p>
+            <h3>Détection d'intrusions réseau avec Suricata</h3>
+            <p>
+              Installation et configuration d'un IDS open source sous AlmaLinux pour protéger le réseau
+              d'une entreprise : règles de détection, tests d'attaques, analyse des alertes et rédaction
+              de la documentation technique.
+            </p>
+          </div>
+          <ul class="tags">
+            <li>Suricata</li><li>AlmaLinux</li><li>IDS / IPS</li><li>Analyse réseau</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section class="section section-claire" id="apropos">
+      <div class="conteneur apropos">
+        <div>
+          <h2 class="titre-section">À propos</h2>
+          <p>
+            J'ai commencé par l'informatique « terrain » : réparer des postes, créer des comptes,
+            aider les utilisateurs au quotidien à la préfecture de Ben M'Sick. Puis je suis passé à la
+            cybersécurité, avec un stage où j'ai surveillé et protégé le réseau d'une entreprise.
+          </p>
+          <p>
+            Aujourd'hui, je veux construire des applications web. Je suis en MBA Développeur Full Stack
+            à MyDigitalSchool Lyon et je cherche une entreprise qui m'accueille en alternance pour
+            deux ans ou en stage. J'apprends vite, j'aime comprendre comment les choses marchent, et je sais
+            expliquer un problème technique simplement.
+          </p>
+        </div>
+
+        <dl class="faits">
+          <div><dt>Formation</dt><dd>MBA Développeur Full Stack, MyDigitalSchool Lyon</dd></div>
+          <div><dt>Diplôme</dt><dd>Licence en Informatique Appliquée, Université Mundiapolis</dd></div>
+          <div><dt>Langues</dt><dd>Arabe (maternelle), français (B2), anglais (B1)</dd></div>
+          <div><dt>Permis</dt><dd>Permis B</dd></div>
+          <div><dt>Loisirs</dt><dd>Musique, jeux vidéo, sport</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES ===== -->
+    <section class="section" id="competences">
+      <div class="conteneur">
+        <h2 class="titre-section">Compétences</h2>
+        <div class="competences">
+          <div class="groupe">
+            <h3>Développement web</h3>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>SQL</li><li>Responsive design</li></ul>
+          </div>
+          <div class="groupe">
+            <h3>Langages</h3>
+            <ul class="tags"><li>Java</li><li>Python</li><li>C</li></ul>
+          </div>
+          <div class="groupe">
+            <h3>Outils</h3>
+            <ul class="tags"><li>Git</li><li>GitHub</li><li>GitHub Pages</li><li>VS Code</li></ul>
+          </div>
+          <div class="groupe">
+            <h3>Bases de données</h3>
+            <ul class="tags"><li>Oracle</li><li>SQL*Plus</li><li>Access</li></ul>
+          </div>
+          <div class="groupe">
+            <h3>Systèmes, réseaux et cloud</h3>
+            <ul class="tags"><li>Linux</li><li>AlmaLinux</li><li>VMware</li><li>AWS</li><li>NAS / SAN</li><li>RAID</li></ul>
+          </div>
+          <div class="groupe">
+            <h3>Cybersécurité</h3>
+            <ul class="tags"><li>Suricata</li><li>IDS / IPS</li><li>XSS</li><li>Injection SQL</li><li>MITM</li><li>HTTPS</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARCOURS ===== -->
+    <section class="section section-claire" id="parcours">
+      <div class="conteneur parcours">
+        <div>
+          <h2 class="titre-section">Expériences</h2>
+          <ol class="frise">
+            <li>
+              <p class="frise-date">Mars à juin 2026</p>
+              <h3>Analyste cybersécurité</h3>
+              <p class="frise-lieu">Comply World, Casablanca</p>
+              <p>Mise en place de Suricata pour sécuriser le réseau local, surveillance du trafic, analyse des alertes et documentation technique.</p>
+            </li>
+            <li>
+              <p class="frise-date">Juin à août 2024</p>
+              <h3>Technicien support informatique</h3>
+              <p class="frise-lieu">Préfecture Ben M'Sick, Casablanca</p>
+              <p>Support de niveau 1, réparation des pannes matérielles et réseau, préparation des postes et des comptes, suivi du stock sous Excel.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <h2 class="titre-section">Formation</h2>
+          <ol class="frise">
+            <li>
+              <p class="frise-date">2026 à 2027</p>
+              <h3>MBA Développeur Full Stack</h3>
+              <p class="frise-lieu">MyDigitalSchool, Lyon</p>
+            </li>
+            <li>
+              <p class="frise-date">2024 à 2026</p>
+              <h3>Licence en Informatique Appliquée</h3>
+              <p class="frise-lieu">Université Mundiapolis, Casablanca</p>
+            </li>
+            <li>
+              <p class="frise-date">2022</p>
+              <h3>Baccalauréat Sciences Physiques, mention bien</h3>
+              <p class="frise-lieu">Lycée GSG</p>
+            </li>
+          </ol>
+
+          <h2 class="titre-section titre-petit">Certifications</h2>
+          <ul class="certifs">
+            <li><b>Attestation de suivi des cours de sécurité</b> ANSSI, 2025</li>
+            <li><b>Introduction à la cybersécurité</b> Cisco, 2024</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <div class="conteneur contact-grille">
+        <div>
+          <h2 class="titre-section">Vous cherchez un alternant ou un stagiaire ?</h2>
+          <p class="intro-section">Écrivez-moi ou appelez-moi, je réponds vite.</p>
+          <ul class="contact-liste">
+            <li><span>E-mail</span><a href="mailto:yassertabya22@gmail.com">yassertabya22@gmail.com</a></li>
+            <li><span>Téléphone</span><a href="tel:+33768931693">07 68 93 16 93</a></li>
+            <li><span>GitHub</span><a href="https://github.com/yasser885" target="_blank" rel="noopener">github.com/yasser885</a></li>
+          </ul>
+          <a href="cv/CV_Yasser_TABYA.pdf" class="bouton bouton-clair" download>Télécharger mon CV</a>
+        </div>
+
+        <form class="formulaire" id="formulaire" novalidate>
+          <label for="nom">Votre nom</label>
+          <input type="text" id="nom" name="nom" autocomplete="name">
+
+          <label for="entreprise">Entreprise</label>
+          <input type="text" id="entreprise" name="entreprise" autocomplete="organization">
+
+          <label for="email">Votre e-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+
+          <p class="erreur" id="erreur" hidden></p>
+          <button type="submit" class="bouton bouton-clair">Envoyer le message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur pied-ligne">
+      <p>© <span id="annee"></span> Yasser Tabya</p>
+      <p>Site codé à la main en HTML, CSS et JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
